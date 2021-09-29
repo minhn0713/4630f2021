@@ -14,7 +14,8 @@
         app:srcCompat="@drawable/selfie" />
 
     <TextView
-        android:text="@string/minh_nguyen"
+        android:text="@string/my_name"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -22,5 +23,33 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:text="@string/info"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView1"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="@string/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView1"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="@string/major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView2"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
 </RelativeLayout>

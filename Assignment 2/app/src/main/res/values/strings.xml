@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Assignment 2</string>
-    <string name="minh_nguyen">Minh Nguyen</string>
+    <string name="my_name">Minh Nguyen</string>
+    <string name="info">Student at UML</string>
+    <string name="major">Computer Science Major</string>
 </resources>
