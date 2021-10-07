@@ -12,87 +12,87 @@
         android:layout_height="wrap_content"
         android:id="@+id/RelativeLayout">
 
-    <ImageView
-        android:id="@+id/selfie_imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        app:srcCompat="@drawable/selfie"
-        android:contentDescription="@string/selfie" />
+        <ImageView
+            android:id="@+id/selfie_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/selfie"
+            android:contentDescription="@string/selfie" />
 
-    <TextView
-        android:text="@string/my_name"
-        android:id="@+id/name_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/selfie_imageView"
-        android:textColor="@color/black"
-        android:textSize="90sp"
-        android:textStyle="bold"
-        android:fontFamily="@font/shalma"/>
+        <TextView
+            android:text="@string/my_name"
+            android:id="@+id/name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/selfie_imageView"
+            android:textColor="@color/black"
+            android:textSize="90sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/shalma"/>
 
-    <TextView
-        android:text="@string/info"
-        android:id="@+id/status_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/name_textview"
-        android:textColor="@color/black"
-        android:textSize="70sp"
-        android:fontFamily="@font/shalma"/>
+        <TextView
+            android:text="@string/info"
+            android:id="@+id/status_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/name_textview"
+            android:textColor="@color/black"
+            android:textSize="70sp"
+            android:fontFamily="@font/shalma"/>
 
-    <TextView
-        android:text="@string/major"
-        android:id="@+id/major_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/status_textview"
-        android:textColor="@color/black"
-        android:textSize="70sp"
-        android:fontFamily="@font/shalma"/>
+        <TextView
+            android:text="@string/major"
+            android:id="@+id/major_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/status_textview"
+            android:textColor="@color/black"
+            android:textSize="70sp"
+            android:fontFamily="@font/shalma"/>
 
-    <Button
-        android:id="@+id/self_intro_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/major_textview"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="#db402c"
-        android:text="@string/self_intro"
-        android:textColor="@color/black" />
+        <Button
+            android:id="@+id/self_intro_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/major_textview"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#db402c"
+            android:text="@string/self_intro"
+            android:textColor="@color/black" />
 
-    <Button
-        android:id="@+id/facts_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/self_intro_button"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="#db402c"
-        android:text="@string/facts"
-        android:textColor="@color/black" />
+        <Button
+            android:id="@+id/facts_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/self_intro_button"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#db402c"
+            android:text="@string/facts"
+            android:textColor="@color/black" />
 
-    <Button
-        android:id="@+id/invest_port_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/facts_button"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="#db402c"
-        android:text="@string/invest_port"
-        android:textColor="@color/black" />
+        <Button
+            android:id="@+id/invest_port_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/facts_button"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#db402c"
+            android:text="@string/invest_port"
+            android:textColor="@color/black" />
 
-    <Button
-        android:id="@+id/resume_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/invest_port_button"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="#db402c"
-        android:text="@string/my_resume"
-        android:textColor="@color/black" />
+        <Button
+            android:id="@+id/resume_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/invest_port_button"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#db402c"
+            android:text="@string/my_resume"
+            android:textColor="@color/black" />
 
     </RelativeLayout>
 </ScrollView>
