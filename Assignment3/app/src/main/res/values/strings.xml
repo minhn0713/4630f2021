@@ -4,5 +4,7 @@
     <string name="my_name">Minh Nguyen</string>
     <string name="info">Student at UML</string>
     <string name="major">Computer Science Major</string>
+    <string name="self_intro">Self Intro</string>
+    <string name="facts"> Facts About Me</string>
     <string name="invest_port"> Investment Portfolio</string>
 </resources>

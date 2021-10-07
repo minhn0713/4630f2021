@@ -46,12 +46,34 @@
         android:textSize="20sp" />
 
     <Button
+        android:id="@+id/self_intro_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/major_textview"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#db402c"
+        android:text="@string/self_intro"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/facts_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/self_intro_button"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#db402c"
+        android:text="@string/facts"
+        android:textColor="@color/black" />
+
+    <Button
         android:id="@+id/invest_port_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/facts_button"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/major_textview"
-        android:text="@string/invest_port"
         android:backgroundTint="#db402c"
+        android:text="@string/invest_port"
         android:textColor="@color/black" />
+
+
 </RelativeLayout>
