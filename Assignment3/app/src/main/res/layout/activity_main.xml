@@ -84,5 +84,15 @@
         android:text="@string/invest_port"
         android:textColor="@color/black" />
 
+    <Button
+        android:id="@+id/resume_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/invest_port_button"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#db402c"
+        android:text="@string/my_resume"
+        android:textColor="@color/black" />
+
     </RelativeLayout>
 </ScrollView>

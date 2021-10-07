@@ -36,4 +36,7 @@
     <string name="snap"> Snapchat</string>
     <string name="twtr"> Twitter</string>
     <string name="nflx"> Netflix</string>
+
+    // resume
+    <string name="my_resume"> My Resume</string>
 </resources>
