@@ -19,6 +19,9 @@
             android:name=".InvestPortActivity"
             android:exported="true" />
         <activity
+            android:name=".MyPortActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

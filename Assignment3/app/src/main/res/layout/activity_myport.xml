@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MyPortActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selfintro_custom_bg"
+        android:id="@+id/RelativeLayout">
+
+        <TextView
+            android:id="@+id/facebook_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/fb"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:fontFamily="@font/goldleaf"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:drawableRight="@drawable/fb_icon" />
+
+        <TextView
+            android:id="@+id/amazon_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/facebook_textview"
+            android:layout_centerHorizontal="true"
+            android:text="@string/amzn"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:fontFamily="@font/goldleaf"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:drawableRight="@drawable/amzn_icon"/>
+
+        <TextView
+            android:id="@+id/apple_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amazon_textview"
+            android:layout_centerHorizontal="true"
+            android:text="@string/aapl"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:fontFamily="@font/goldleaf"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:drawableRight="@drawable/aapl_icon"/>
+
+        <TextView
+            android:id="@+id/tesla_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/apple_textview"
+            android:layout_centerHorizontal="true"
+            android:text="@string/tsla"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:fontFamily="@font/goldleaf"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:drawableRight="@drawable/tsla_icon"/>
+
+        <TextView
+            android:id="@+id/salesforce_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tesla_textview"
+            android:layout_centerHorizontal="true"
+            android:text="@string/crm"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:fontFamily="@font/goldleaf"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:drawableRight="@drawable/crm_icon"/>
+
+        <TextView
+            android:id="@+id/snapchat_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/salesforce_textview"
+            android:layout_centerHorizontal="true"
+            android:text="@string/snap"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:fontFamily="@font/goldleaf"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:drawableRight="@drawable/snap_icon"/>
+
+        <TextView
+            android:id="@+id/twitter_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/snapchat_textview"
+            android:layout_centerHorizontal="true"
+            android:text="@string/twtr"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:fontFamily="@font/goldleaf"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:drawableRight="@drawable/twtr_icon"/>
+
+    </RelativeLayout>
+</ScrollView>
