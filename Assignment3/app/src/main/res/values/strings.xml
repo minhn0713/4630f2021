@@ -14,4 +14,11 @@
     <string name="job"> I would like to be a Full Stack Developer</string>
     <string name="family"> My family is from Vietnam</string>
     <string name="family_members"> There are four people in my family</string>
+
+    // facts about me
+    <string name="birth_place"> I was born in Vietnam</string>
+    <string name="current_location"> I currently live in Dracut, MA</string>
+    <string name="dream_location"> I would like to live in Hawaii</string>
+    <string name="partner_birth_place"> My significant other was born in Vietnam</string>
+    <string name="time_met"> I met my partner three years ago</string>
 </resources>
