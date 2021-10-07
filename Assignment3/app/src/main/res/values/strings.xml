@@ -1,4 +1,5 @@
 <resources>
+    // main page strings
     <string name="app_name">Assignment 3</string>
     <string name="selfie"> My Selfie</string>
     <string name="my_name">Minh Nguyen</string>
@@ -6,6 +7,7 @@
     <string name="major">Computer Science Major</string>
     <string name="self_intro">Self Intro</string>
     <string name="facts"> Facts About Me</string>
+    <string name="more_facts"> More Facts About Me</string>
     <string name="invest_port"> Investment Portfolio</string>
 
     // self intro string
@@ -21,6 +23,12 @@
     <string name="dream_location"> I would like to live in Hawaii</string>
     <string name="partner_birth_place"> My significant other was born in Vietnam</string>
     <string name="time_met"> I met my partner three years ago</string>
+
+    // more facts about me string
+    <string name="free_time"> I used my free time to study algorithms</string>
+    <string name="app"> I used Flutter to code personal projects</string>
+    <string name="ide"> My favorite IDE for coding is VS Code</string>
+    <string name="fave_algo"> My favorite algorithm is Bubble Sort</string>
 
     // investment portfolio string
     <string name="my_port"> My Portfolio</string>

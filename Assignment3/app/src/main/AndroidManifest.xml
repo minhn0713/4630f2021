@@ -16,6 +16,9 @@
             android:name=".FactsAboutMeActivity"
             android:exported="true" />
         <activity
+            android:name=".MoreFactsAboutMeActivity"
+            android:exported="true" />
+        <activity
             android:name=".InvestPortActivity"
             android:exported="true" />
         <activity

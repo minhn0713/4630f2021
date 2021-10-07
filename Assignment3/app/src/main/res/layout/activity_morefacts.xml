@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/facts_custom_bg"
+    tools:context=".MoreFactsAboutMeActivity">
+
+    <TextView
+        android:id="@+id/free_time_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/goldleaf"
+        android:text="@string/free_time"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/app_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/free_time_textview"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/goldleaf"
+        android:text="@string/app"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/ide_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_textview"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/goldleaf"
+        android:text="@string/ide"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/fave_algo_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ide_textview"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/goldleaf"
+        android:text="@string/fave_algo"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+</RelativeLayout>
