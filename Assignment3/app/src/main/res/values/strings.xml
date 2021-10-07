@@ -7,4 +7,11 @@
     <string name="self_intro">Self Intro</string>
     <string name="facts"> Facts About Me</string>
     <string name="invest_port"> Investment Portfolio</string>
+
+    // self intro
+    <string name="location"> I am now at Dracut, MA</string>
+    <string name="from"> I am from Vietnam</string>
+    <string name="job"> I would like to be a Full Stack Developer</string>
+    <string name="family"> My family is from Vietnam</string>
+    <string name="family_members"> There are four people in my family</string>
 </resources>
