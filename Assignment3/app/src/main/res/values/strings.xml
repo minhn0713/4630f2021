@@ -27,7 +27,7 @@
     <string name="family_port"> Family Portfolio</string>
     <string name="partner_port"> Partner Portfolio</string>
 
-    // my investment portfolio string
+    // investment portfolio string
     <string name="fb"> Facebook</string>
     <string name="amzn"> Amazon</string>
     <string name="aapl"> Apple</string>
@@ -35,4 +35,5 @@
     <string name="crm"> Salesforce</string>
     <string name="snap"> Snapchat</string>
     <string name="twtr"> Twitter</string>
+    <string name="nflx"> Netflix</string>
 </resources>

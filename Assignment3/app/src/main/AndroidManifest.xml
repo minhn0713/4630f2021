@@ -22,6 +22,12 @@
             android:name=".MyPortActivity"
             android:exported="true" />
         <activity
+            android:name=".FamilyPortActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PartnerPortActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
