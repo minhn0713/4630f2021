@@ -4,13 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 public class InvestPortActivity extends AppCompatActivity {
-    private Button my_port_button;
-    private Button family_port_button;
-    private Button partner_port_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,31 +14,16 @@ public class InvestPortActivity extends AppCompatActivity {
         setContentView(R.layout.activity_investmentport);
 
         // my portfolio button
-        my_port_button = (Button) findViewById(R.id.my_port_button);
-        my_port_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openMyPort();
-            }
-        });
+        Button my_port_button = (Button) findViewById(R.id.my_port_button);
+        my_port_button.setOnClickListener(v -> openMyPort());
 
         // family portfolio button
-        family_port_button = (Button) findViewById(R.id.family_port_button);
-        family_port_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openFamilyPort();
-            }
-        });
+        Button family_port_button = (Button) findViewById(R.id.family_port_button);
+        family_port_button.setOnClickListener(v -> openFamilyPort());
 
         // partner portfolio button
-        partner_port_button = (Button) findViewById(R.id.partner_port_button);
-        partner_port_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openPartnerPort();
-            }
-        });
+        Button partner_port_button = (Button) findViewById(R.id.partner_port_button);
+        partner_port_button.setOnClickListener(v -> openPartnerPort());
     }
 
     // open my portfolio activity

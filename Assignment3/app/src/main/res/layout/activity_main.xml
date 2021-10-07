@@ -75,10 +75,20 @@
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/invest_port_button"
+            android:id="@+id/more_facts_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/facts_button"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#db402c"
+            android:text="@string/more_facts"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/invest_port_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/more_facts_button"
             android:layout_centerHorizontal="true"
             android:backgroundTint="#db402c"
             android:text="@string/invest_port"

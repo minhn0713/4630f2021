@@ -5,56 +5,33 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button invest_port_button;
-    private Button facts_button;
-    private Button self_intro_button;
-    private Button resume_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //TextView text = (TextView) findViewById(R.id.resume_textview);
-        //text.setMovementMethod(LinkMovementMethod.getInstance());
 
         // self intro button
-        self_intro_button = (Button) findViewById(R.id.self_intro_button);
-        self_intro_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openSelfIntro();
-            }
-        });
+        Button self_intro_button = (Button) findViewById(R.id.self_intro_button);
+        self_intro_button.setOnClickListener(v -> openSelfIntro());
 
         // facts about me button
-        facts_button = (Button) findViewById(R.id.facts_button);
-        facts_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openFacts();
-            }
-        });
+        Button facts_button = (Button) findViewById(R.id.facts_button);
+        facts_button.setOnClickListener(v -> openFacts());
+
+        // more facts about me button
+        Button more_facts_button = (Button) findViewById(R.id.more_facts_button);
+        more_facts_button.setOnClickListener(v -> openMoreFacts());
 
         // invest portfolio button
-        invest_port_button = (Button) findViewById(R.id.invest_port_button);
-        invest_port_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openInvestPort();
-            }
-        });
+        Button invest_port_button = (Button) findViewById(R.id.invest_port_button);
+        invest_port_button.setOnClickListener(v -> openInvestPort());
 
-        resume_button = (Button) findViewById(R.id.resume_button);
-        resume_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openResume();
-            }
-        });
+        Button resume_button = (Button) findViewById(R.id.resume_button);
+        resume_button.setOnClickListener(v -> openResume());
     }
 
     // open self intro activity
@@ -66,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
     // open facts about me activity
     public void openFacts() {
         Intent intent = new Intent(this, FactsAboutMeActivity.class);
+        startActivity(intent);
+    }
+
+    // open more facts about me activity
+    public void openMoreFacts() {
+        Intent intent = new Intent(this, MoreFactsAboutMeActivity.class);
         startActivity(intent);
     }
 
