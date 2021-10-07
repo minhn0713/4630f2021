@@ -28,8 +28,9 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/selfie_imageView"
         android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textSize="90sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/shalma"/>
 
     <TextView
         android:text="@string/info"
@@ -39,7 +40,8 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/name_textview"
         android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:textSize="70sp"
+        android:fontFamily="@font/shalma"/>
 
     <TextView
         android:text="@string/major"
@@ -49,7 +51,8 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/status_textview"
         android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:textSize="70sp"
+        android:fontFamily="@font/shalma"/>
 
     <Button
         android:id="@+id/self_intro_button"
