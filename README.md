@@ -1,4 +1,4 @@
-Mobile App Development Assignments <br />
+Mobile App Programming 1 Assignments <br />
 Assignment 0 - 3 and a personal project <br />
 Assignment 0: https://www.cs.uml.edu/~haim/teaching/4630/2021-fall/hw0-survey.html <br />
 Assignment 1: https://www.cs.uml.edu/~haim/teaching/4630/2021-fall/hw1-Reflection-ideas-planning.html <br />
