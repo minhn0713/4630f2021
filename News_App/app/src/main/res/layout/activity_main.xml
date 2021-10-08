@@ -22,7 +22,7 @@
                 android:padding="10dp"
                 android:text="@string/header"
                 android:textColor="@color/black"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:textStyle="bold">
             </TextView>
         </RelativeLayout>
@@ -38,13 +38,49 @@
         tools:listitem="@layout/activity_category_types"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
+    <TextView
+        android:id="@+id/hotNewsTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:padding="10dp"
+        android:text="@string/hot_news"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/news_categories" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hot_news"
+        android:orientation="horizontal"
+        android:layout_marginStart="17dp"
+        android:layout_below="@+id/hotNewsTV"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/activity_hot_news"/>
+
+    <TextView
+        android:id="@+id/allNewsTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:padding="10dp"
+        android:text="@string/all_news"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/hot_news" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/details_categories"
         android:orientation="horizontal"
         android:layout_marginStart="17dp"
-        android:layout_below="@+id/news_categories"
+        android:layout_below="@+id/allNewsTV"
         tools:listitem="@layout/activity_category_items"/>
 
 </RelativeLayout>
