@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#3D2B1F">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/hotNewsIV"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/news_image" />
+        <TextView
+            android:id="@+id/headlineTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hotNewsIV"
+            android:textColor="@color/white"
+            android:text="@string/news_headline" />
+
+        <TextView
+            android:id="@+id/hotNewsDetailsTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headlineTV"
+            android:textColor="@color/white"
+            android:text="@string/news_subheadline" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

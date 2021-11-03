@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">New World</string>
+    <string name="header">New World</string>
+    <string name="hot_news"> Hot News</string>
+    <string name="all_news"> All News</string>
+    <string name="news_image"> News Image</string>
+    <string name="category_image"> Category Image</string>
+    <string name="news_headline"> News Headline</string>
+    <string name="news_subheadline"> News Sub Headline</string>
+    <string name="category"> Category</string>
+</resources>
