@@ -17,7 +17,7 @@
             android:scaleType="centerCrop"
             android:contentDescription="@string/news_image"/>
         <TextView
-            android:id="@+id/categoryItemsTV"
+            android:id="@+id/categoryItemsTitleTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/categoryItemsIV"
@@ -25,10 +25,10 @@
             android:text="@string/news_headline" />
 
         <TextView
-            android:id="@+id/categoryDetailsTV"
+            android:id="@+id/categoryItemsDetailsTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/categoryItemsTV"
+            android:layout_below="@+id/categoryItemsTitleTV"
             android:textColor="@color/white"
             android:text="@string/news_subheadline" />
 

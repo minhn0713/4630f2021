@@ -33,8 +33,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull Adapter.ViewHolder holder, int position) {
         WallStreetHeadlines wallStreetHeadlines = wallStreetHeadlinesArrayList.get(position);
-        holder.categoryItemsTV.setText(wallStreetHeadlines.getTitle());
-        holder.categoryDetailsTV.setText(wallStreetHeadlines.getDescription());
+        holder.categoryItemsTitleTV.setText(wallStreetHeadlines.getTitle());
+        holder.categoryItemsDetailsTV.setText(wallStreetHeadlines.getDescription());
         Picasso.with(context).load(wallStreetHeadlines.getUrlToImage()).into(holder.categoryItemsIV);
     }
 
@@ -44,12 +44,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        final private TextView categoryItemsTV, categoryDetailsTV;
+        final private TextView categoryItemsTitleTV, categoryItemsDetailsTV;
         final private ImageView categoryItemsIV;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            categoryItemsTV = itemView.findViewById(R.id.categoryItemsTV);
-            categoryDetailsTV = itemView.findViewById(R.id.categoryDetailsTV);
+            categoryItemsTitleTV = itemView.findViewById(R.id.categoryItemsTitleTV);
+            categoryItemsDetailsTV = itemView.findViewById(R.id.categoryItemsDetailsTV);
             categoryItemsIV = itemView.findViewById(R.id.categoryItemsIV);
         }
     }
