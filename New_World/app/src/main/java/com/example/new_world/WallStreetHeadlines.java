@@ -2,7 +2,7 @@
 package com.example.new_world;
 
 public class WallStreetHeadlines {
-    private String source;
+    private Source source;
     private String author;
     private String title;
     private String description;
@@ -11,7 +11,7 @@ public class WallStreetHeadlines {
     private String publishedAt;
     private String content;
 
-    public WallStreetHeadlines(String source, String author, String title, String description,
+    public WallStreetHeadlines(Source source, String author, String title, String description,
                                String url, String urlToImage, String publishedAt, String content) {
         this.source = source;
         this.author = author;
@@ -23,11 +23,11 @@ public class WallStreetHeadlines {
         this.content = content;
     }
 
-    public String getSource() {
+    public Source getSource() {
         return source;
     }
 
-    public void setSource(String source) {
+    public void setSource(Source source) {
         this.source = source;
     }
 
