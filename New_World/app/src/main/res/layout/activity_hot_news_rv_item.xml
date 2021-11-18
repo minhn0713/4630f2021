@@ -3,35 +3,43 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="10dp"
-    app:cardBackgroundColor="#3D2B1F"
-    app:cardCornerRadius="8dp">
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="#3D2B1F">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <ImageView
-            android:id="@+id/categoryItemsIV"
+            android:id="@+id/hotNewsImageView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
-            android:contentDescription="@string/news_image"/>
+            android:contentDescription="@string/news_image" />
         <TextView
-            android:id="@+id/categoryItemsTitleTV"
+            android:id="@+id/hotNew_headlineTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/categoryItemsIV"
+            android:layout_below="@+id/hotNewsImageView"
             android:textColor="@color/yellow"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:padding="3dp"
+            android:maxLines="2"
+            android:layout_margin="2dp"
             android:text="@string/news_headline" />
 
         <TextView
-            android:id="@+id/categoryItemsDetailsTV"
+            android:id="@+id/hotNews_SubHeadingTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/categoryItemsTitleTV"
+            android:layout_below="@+id/hotNew_headlineTV"
+            android:text="@string/news_subheadline"
             android:textColor="@color/white"
-            android:text="@string/news_subheadline" />
+            android:maxLines="3"
+            android:layout_margin="3dp"
+            android:padding="3dp"
+            />
 
 
     </RelativeLayout>

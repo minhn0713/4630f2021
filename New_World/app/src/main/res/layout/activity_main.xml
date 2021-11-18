@@ -14,74 +14,111 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
+
             <TextView
-                android:id="@+id/headerTextView"
+                android:id="@+id/main_header_category_TV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="15dp"
-                android:padding="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="left"
+                android:padding="2dp"
                 android:text="@string/header"
-                android:textColor="@color/black"
+                android:textColor="@color/yellow"
                 android:textSize="30sp"
-                android:textStyle="bold">
-            </TextView>
+                android:textStyle="bold"></TextView>
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news_categories"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbarId"
-        android:id="@+id/news_categories"
         android:orientation="horizontal"
-        android:layout_marginStart="24dp"
-        tools:listitem="@layout/activity_category_types"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/activity_category_types" />
 
     <TextView
         android:id="@+id/hotNewsTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_below="@+id/news_categories"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="15dp"
-        android:padding="10dp"
+        android:padding="2dp"
         android:text="@string/hot_news"
-        android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textColor="#FF5151"
+        android:textSize="25sp"
         android:textStyle="bold"
-        android:layout_below="@+id/news_categories" />
+/>
+
+    <TextView
+        android:id="@+id/section_heading_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/news_categories"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="2dp"
+        android:text="USER SELECT"
+        android:textColor="#FF5151"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/hot_news"
+        android:id="@+id/main_hot_news_RV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/hotNewsTV"
-        android:layout_marginStart="17dp"
         android:layout_marginTop="3dp"
         android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/activity_hot_news" />
+        tools:listitem="@layout/activity_regular_news_rv_item"
+/>
 
     <TextView
         android:id="@+id/allNewsTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_below="@+id/main_hot_news_RV"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="15dp"
-        android:padding="10dp"
+        android:padding="2dp"
         android:text="@string/all_news"
-        android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textColor="#FF9B6A"
+        android:textSize="25sp"
         android:textStyle="bold"
-        android:layout_below="@+id/hot_news" />
+/>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_all_news_RV"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/details_categories"
-        android:orientation="horizontal"
-        android:layout_marginStart="17dp"
         android:layout_below="@+id/allNewsTV"
-        tools:listitem="@layout/activity_category_items"/>
+        android:orientation="horizontal"
+        tools:listitem="@layout/activity_category_items"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_regular_news_RV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/allNewsTV"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        tools:listitem="@layout/activity_regular_news_rv_item"
+        android:visibility="gone"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/idLoadingBar"
+        android:visibility="gone"
+        />
 
 </RelativeLayout>

@@ -1,6 +1,7 @@
 package com.example.new_world;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,28 +15,42 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
-    final private ArrayList<WallStreetHeadlines> wallStreetHeadlinesArrayList;
-    final private Context context;
+public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
+    private ArrayList<WallStreetHeadlines> wallStreetHeadlinesArrayList;
+    private Context context;
 
-    public Adapter(ArrayList<WallStreetHeadlines> wallStreetHeadlinesArrayList, Context context) {
+    public NewsAdapter(ArrayList<WallStreetHeadlines> wallStreetHeadlinesArrayList, Context context) {
         this.wallStreetHeadlinesArrayList = wallStreetHeadlinesArrayList;
         this.context = context;
     }
 
     @NonNull
     @Override
-    public Adapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public NewsAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_category_items,parent,false);
-        return new Adapter.ViewHolder(view);
+        return new NewsAdapter.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Adapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull NewsAdapter.ViewHolder holder, int position) {
         WallStreetHeadlines wallStreetHeadlines = wallStreetHeadlinesArrayList.get(position);
         holder.categoryItemsTitleTV.setText(wallStreetHeadlines.getTitle());
         holder.categoryItemsDetailsTV.setText(wallStreetHeadlines.getDescription());
-        Picasso.with(context).load(wallStreetHeadlines.getUrlToImage()).into(holder.categoryItemsIV);
+        Picasso.get().load(wallStreetHeadlines.getUrlToImage()).into(holder.categoryItemsIV);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(context,NewsDetailActivity.class);
+                i.putExtra("title",wallStreetHeadlines.getTitle());
+                i.putExtra("content",wallStreetHeadlines.getContent());
+                i.putExtra("des",wallStreetHeadlines.getDescription());
+                i.putExtra("image",wallStreetHeadlines.getUrlToImage());
+                i.putExtra("url",wallStreetHeadlines.getUrl());
+                context.startActivity(i); //start the activity
+                //step13: go to NewsDetailsActivity
+            }
+        });
     }
 
     @Override
