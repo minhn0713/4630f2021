@@ -1,4 +1,4 @@
-Name: Hout Tang ; Student ID:01890747 ;
+Name: Minh Nguyen ; Student ID: 01724065 ;
 Course Name: COMP.4630;
 Professor: Dr. Haim Levkowitz; 
 
